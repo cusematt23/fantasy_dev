@@ -1,0 +1,39 @@
+{
+    "SITE": {
+        "DRAFTKINGS": {
+            "SPORT": {
+                "NFL": {
+                    "TYPE": {
+                        "CLASSIC": {
+                            "SALARY_CAP": 50000,
+                            "LINEUP_ORDER": ["QB", "RB", "RB", "WR", "WR", "WR", "TE", "FLEX", "DST"],
+                            "FLEX_DEFS": {
+                                "FLEX": ["RB", "WR", "TE"]
+                            },
+                            "POSITION_MIN": {
+                                "QB": 1, "RB": 2, "WR": 3, "TE": 1, "DST": 1
+                            },
+                            "POSITION_MAX": {
+                                "QB": 1, "RB": 3, "WR": 4, "TE": 2, "DST": 1
+                            }
+                        },
+                        "SHOWDOWN": {
+                            "SALARY_CAP": 50000,
+                            "LINEUP_ORDER": ["CPTN", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
+                            "FLEX_DEFS": {
+                                "FLEX": ["QB", "RB", "WR", "TE", "K", "DST"],
+                                "CPTN": ["QB", "RB", "WR", "TE", "K", "DST"]
+                            },
+                            "FPT_MULTIPLIER": {
+                                "CPTN": 1.5, "FLEX": 1
+                            },
+                            "SALARY_MULTIPLIER": {
+                                "CPTN": 1.5, "FLEX": 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
