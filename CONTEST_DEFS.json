@@ -1,39 +1,178 @@
 {
-    "SITE": {
-        "DRAFTKINGS": {
-            "SPORT": {
-                "NFL": {
-                    "TYPE": {
-                        "CLASSIC": {
-                            "SALARY_CAP": 50000,
-                            "LINEUP_ORDER": ["QB", "RB", "RB", "WR", "WR", "WR", "TE", "FLEX", "DST"],
-                            "FLEX_DEFS": {
-                                "FLEX": ["RB", "WR", "TE"]
-                            },
-                            "POSITION_MIN": {
-                                "QB": 1, "RB": 2, "WR": 3, "TE": 1, "DST": 1
-                            },
-                            "POSITION_MAX": {
-                                "QB": 1, "RB": 3, "WR": 4, "TE": 2, "DST": 1
-                            }
-                        },
-                        "SHOWDOWN": {
-                            "SALARY_CAP": 50000,
-                            "LINEUP_ORDER": ["CPTN", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
-                            "FLEX_DEFS": {
-                                "FLEX": ["QB", "RB", "WR", "TE", "K", "DST"],
-                                "CPTN": ["QB", "RB", "WR", "TE", "K", "DST"]
-                            },
-                            "FPT_MULTIPLIER": {
-                                "CPTN": 1.5, "FLEX": 1
-                            },
-                            "SALARY_MULTIPLIER": {
-                                "CPTN": 1.5, "FLEX": 1
-                            }
-                        }
-                    }
+    "DRAFTKINGS": {     
+        "NFL": {
+            "CLASSIC": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["QB", "RB", "RB", "WR", "WR", "WR", "TE", "FLEX", "DST"],
+                "FLEX_DEFS": {
+                    "FLEX": ["RB", "WR", "TE"]
+                },
+                "POSITION_MIN": {
+                    "QB": 1, "RB": 2, "WR": 3, "TE": 1, "DST": 1
+                },
+                "POSITION_MAX": {
+                    "QB": 1, "RB": 3, "WR": 4, "TE": 2, "DST": 1
+                }
+            },
+            "SHOWDOWN": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["CPTN", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
+                "FLEX_DEFS": {
+                    "FLEX": ["QB", "RB", "WR", "TE", "K", "DST"],
+                    "CPTN": ["QB", "RB", "WR", "TE", "K", "DST"]
+                },
+                "POSITION_MIN": {
+                    "QB": 0, "RB": 0, "WR": 0, "TE": 0, "K": 0, "DST": 0
+                },
+                "POSITION_MAX": {
+                    "QB": 6, "RB": 6, "WR": 6, "TE": 6, "K": 6, "DST": 2
+                },
+                "FLEX_POSITION_MIN": {
+                    "CPTN": 1, "FLEX": 5
+                },
+                "FLEX_POSITION_MAX": {
+                    "CPTN": 1, "FLEX": 5
+                },
+                "FPT_MULTIPLIER": {
+                    "CPTN": 1.5, "FLEX": 1
+                },
+                "SALARY_MULTIPLIER": {
+                    "CPTN": 1.5, "FLEX": 1
+                }
+            }   
+        },
+        "NBA": {
+            "CLASSIC": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["PG", "SG", "SF", "PF", "C", "G", "F", "Util"],
+                "FLEX_DEFS": {
+                    "G": ["PG", "SG"],
+                    "F": ["SF", "PF"],
+                    "UTIL": ["PG", "SG", "SF", "PF", "C"]
+                },
+                "POSITION_MIN": {
+                    "PG": 1, "SG": 1, "SF": 1, "PF": 1, "C": 1
+                },
+                "POSITION_MAX": {
+                    "PG": 3, "SG": 3, "SF": 3, "PF": 3, "C": 2
+                }
+            },
+            "SHOWDOWN": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["CPTN", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
+                "FLEX_DEFS": {
+                    "FLEX": ["PG", "SG", "SF", "PF", "C"],
+                    "CPTN": ["PG", "SG", "SF", "PF", "C"]
+                },
+                "POSITION_MIN": {
+                    "CPTN": 1, "FLEX": 5
+                },
+                "POSITION_MAX": {
+                    "CPTN": 1, "FLEX": 5
+                },
+                "FPT_MULTIPLIER": {
+                    "CPTN": 1.5, "FLEX": 1
+                },
+                "SALARY_MULTIPLIER": {
+                    "CPTN": 1.5, "FLEX": 1
+                }
+            }
+        },
+        "NHL": {
+            "CLASSIC": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["C", "C", "W", "W", "W", "D", "D", "G", "UTIL"],
+                "FLEX_DEFS": {
+                    "UTIL": ["C", "W", "D"]
+                },
+                "POSITION_MIN": {
+                    "C": 2, "W": 3, "D": 2, "G": 1
+                },
+                "POSITION_MAX": {
+                    "C": 4, "W": 4, "D": 4, "G": 1
+                }
+            }
+        },
+        "GOLF": {
+            "CLASSIC": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["G", "G", "G", "G", "G", "G"],
+                "POSITION_MIN": {
+                    "G": 6
+                },
+                "POSITION_MAX": {
+                    "G": 6
+                }
+            },
+            "SHOWDOWN": {
+                "SALARY_CAP": 50000,
+                "LINEUP_ORDER": ["G", "G", "G", "G", "G", "G"],
+                "POSITION_MIN": {
+                    "G": 6
+                },
+                "POSITION_MAX": {
+                    "G": 6
                 }
             }
         }
-    }
+    },    
+    "FANDUEL": {
+        "NFL": {
+            "FULL ROSTER": {
+                "SALARY_CAP": 60000,
+                "LINEUP_ORDER": ["QB", "RB", "RB", "WR", "WR", "WR", "TE", "FLEX", "D"],
+                "FLEX_DEFS": {
+                    "FLEX": ["RB", "WR", "TE"]
+                },
+                "POSITION_MIN": {
+                    "QB": 1, "RB": 2, "WR": 3, "TE": 1, "D": 1
+                },
+                "POSITION_MAX": {
+                    "QB": 1, "RB": 3, "WR": 4, "TE": 2, "D": 1
+                }
+            },
+            "SINGLE GAME": {
+                "SALARY_CAP": 60000,
+                "LINEUP_ORDER": ["MVP", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
+                "FLEX_DEFS": {
+                    "MVP": ["QB", "RB", "WR", "TE", "K", "D"],
+                    "FLEX": ["QB", "RB", "WR", "TE", "K", "D"]
+                },
+                "FPT_MULTIPLIER": {
+                    "MVP": 1.5, "FLEX": 1
+                },
+                "SALARY_MULTIPLIER": {
+                    "MVP": 1, "FLEX": 1
+                }
+            }
+        },
+        "NBA": {
+            "FULL ROSTER": {
+                "SALARY_CAP": 60000,
+                "LINEUP_ORDER": ["PG", "PG", "SG", "SG", "SF", "SF", "PF", "PF", "C"],
+                "POSITION_MIN": {
+                    "PG": 2, "SG": 2, "SF": 2, "PF": 2, "C": 1
+                },
+                "POSITION_MAX": {
+                    "PG": 2, "SG": 2, "SF": 2, "PF": 2, "C": 1
+                }
+            },
+            "SINGLE GAME": {
+                "SALARY_CAP": 60000,
+                "LINEUP_ORDER": ["MVP", "STAR", "PRO", "UTIL", "UTIL"],
+                "FLEX_DEFS": {
+                    "MVP": ["PG", "SG", "SF", "PF", "C"],
+                    "STAR": ["PG", "SG", "SF", "PF", "C"],
+                    "PRO": ["PG", "SG", "SF", "PF", "C"],
+                    "UTIL": ["PG", "SG", "SF", "PF", "C"]
+                },
+                "POSITION_MIN": {
+                    "PG": 0, "SG": 2, "SF": 2, "PF": 2, "C": 1
+                },
+                "POSITION_MAX": {
+                    "PG": 2, "SG": 2, "SF": 2, "PF": 2, "C": 1
+                }
+            }
+        }
+    }  
 }
