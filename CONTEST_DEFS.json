@@ -18,8 +18,8 @@
                 "SALARY_CAP": 50000,
                 "LINEUP_ORDER": ["CPTN", "FLEX", "FLEX", "FLEX", "FLEX", "FLEX"],
                 "FLEX_DEFS": {
-                    "FLEX": ["QB", "RB", "WR", "TE", "K", "DST"],
-                    "CPTN": ["QB", "RB", "WR", "TE", "K", "DST"]
+                    "FLEX": ["ALL"],
+                    "CPTN": ["ALL"]
                 },
                 "POSITION_MIN": {
                     "QB": 0, "RB": 0, "WR": 0, "TE": 0, "K": 0, "DST": 0
@@ -44,7 +44,7 @@
         "NBA": {
             "CLASSIC": {
                 "SALARY_CAP": 50000,
-                "LINEUP_ORDER": ["PG", "SG", "SF", "PF", "C", "G", "F", "Util"],
+                "LINEUP_ORDER": ["PG", "SG", "SF", "PF", "C", "G", "F", "UTIL"],
                 "FLEX_DEFS": {
                     "G": ["PG", "SG"],
                     "F": ["SF", "PF"],
